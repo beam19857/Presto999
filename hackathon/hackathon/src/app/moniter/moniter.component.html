@@ -1,0 +1,55 @@
+
+
+
+<div class="image" >
+        <mat-toolbar>My Forest</mat-toolbar>
+      
+                                     <div  align="center">
+                                            <Font face="Agency FB" size="5" color="black" > สถานที่ : {{place}} </Font>
+
+                                       <div  >
+                                    <agm-map [latitude]="lat" [longitude]="lng" >
+                                                   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker> 
+                                               </agm-map>
+                                   </div> 
+                                   <br>
+                                   <label>
+                                    <tr>
+                                        <td>
+                                <div >
+                                    <mat-card class="size">
+                                            <mat-list-item *ngFor="let task of tempStatus2 | async">
+                                    <Font face="Agency FB" size="6" color="white" > Alert : {{task.Data}} </Font>
+                                </mat-list-item>
+
+                                    <mat-list-item *ngFor="let task of temp2 | async">
+                                    <Font face="Agency FB" size="6" color="white" > Temperature : {{task.Data}} °C</Font>
+                                    </mat-list-item>
+                                    <mat-list-item *ngFor="let hum of hum2 | async">
+                                    <Font face="Agency FB" size="6" color="white" > humidity air : {{hum.Data}} %</Font>
+                                </mat-list-item>
+                                <mat-list-item *ngFor="let hum of hum2 | async">
+                                     <Font face="Agency FB" size="6" color="white" > humidity Grund : {{hum.Data*1.3}} % </Font>
+                                    </mat-list-item>
+                                    </mat-card>     
+                                </div>
+                                        </td>
+                                        <td>
+                                <div >
+                                        <mat-card class="size">
+                                        <Font face="Agency FB" size="6" color="white" > Wind 4.5 m/s  </Font>
+                                        <br><Font face="Agency FB" size="6" color="white" > Co : 774 ppm</Font>
+                                        <br> <Font face="Agency FB" size="6" color="white" > Pressure 30.0 </Font>
+                                        <br> <Font face="Agency FB" size="6" color="white" > smoke : 1244</Font>
+                                        </mat-card>     
+                                    </div>
+                                </td>
+                                    </tr>
+                               </label>
+                               
+
+                            
+
+                            </div>
+</div>
+         

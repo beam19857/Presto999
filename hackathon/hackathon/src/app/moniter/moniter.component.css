@@ -1,0 +1,33 @@
+.background{
+    background : #ffff;
+    color: black;
+    width: 200px;
+    height: 200px;
+}
+agm-map {
+    height: 330px;
+    width: 680px;
+  }
+.size{
+    width: 400px;
+    
+    border-radius: 20px;
+    background-color: rgba(152, 204, 151, 0.65);
+}
+.size2{
+    width: 300px;
+}
+
+colgroup { 
+    display: table-column-group;
+  }
+  .image{
+    height:40em; background-size:cover; width:cover;
+    background-image:url('https://sv1.picz.in.th/images/2019/08/24/ZUf6Fy.png');
+    
+  }
+.text{
+    -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+
+}
